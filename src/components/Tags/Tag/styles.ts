@@ -1,16 +1,30 @@
 import styled from "styled-components";
 
-export const A = styled.div`
+interface ITagprops {
+ml?: string;
+mt?: string;
+mb?: string;
+mr?: string;
+}
+
+export const Tag = styled.div<ITagprops>`
   
     text-decoration: none;
-    color: ${(props) => props.theme.colors.white};
-    font-size: 10px;
-    opacity: 0.5;
+    color: ${(props) => props.theme.colors.gray};
+    font-size: 11px;
+    opacity: 0.8;
     font-family: 'Fira Code', monospace;
     cursor: pointer;
-    display: block;
+    display: flex;
+    align-items: center;
+    transition: opacity .3s;
     &:hover {
-      opacity: 0.9;
+      opacity: 0.4;
     }
+   margin-left: ${(props) => props.ml};
+   margin-top: ${(props) => props.mt};
+   margin-bottom: ${(props) => props.mb};
+   margin-right: ${(props) => props.mr};
+
 
 `;

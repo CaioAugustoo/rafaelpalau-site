@@ -8,7 +8,7 @@ export default {
 
     white: "#000",
     black: "#FFF",
-    gray: "#ddd",
+    gray: "#000",
 
     success: "#008AB8",
     info: "#3F5D7D",
