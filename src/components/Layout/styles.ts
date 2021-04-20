@@ -10,21 +10,25 @@ export const Container = styled.div`
     "AS CT"
     "FT FT";
 
-  /* height: 100vh; */
-
-  height: 100vh ;
+  @media (max-width: 600px) {
+    grid-template-columns: 170px auto;
+    grid-template-rows: 70px auto 50px;
+    grid-template-areas:
+      "MH MH"
+      "CT CT"
+      "FT FT";
+  }
+  height: 100vh;
   overflow-y: scroll;
-
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     width: 10px;
   }
-  ::-webkit-scrollbar-thumb{
-    background-color: ${props => props.theme.colors.primary};
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.colors.primary};
     border-radius: 10px;
   }
-  ::-webkit-scrollbar-track{
-    background-color: ${props => props.theme.colors.tertiary};
+  ::-webkit-scrollbar-track {
+    background-color: ${(props) => props.theme.colors.tertiary};
     border-radius: 10px;
   }
-  
 `;

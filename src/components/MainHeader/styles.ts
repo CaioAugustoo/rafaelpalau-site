@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   grid-area: MH;
   background-color: ${(props) => props.theme.colors.primary};
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +27,6 @@ export const ImageAndTitle = styled.div`
 
 export const DivToggle = styled.div`
   @media (max-width: 600px) {
-    display: flex;
+    display: none;
   }
 `;

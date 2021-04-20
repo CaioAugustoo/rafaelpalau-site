@@ -40,17 +40,13 @@ const MainHeader: React.FC = () => {
       <S.DivToggle>
         <Tag>'react-switch'</Tag>
         <Tag>&#60;Toggle /&#62;</Tag>
-
-
         <Toggle
         checked={darkTheme}
         labelLeft="Light"
         labelRight="Dark"
         onChange={handleChangeTheme}
       />
-
-      
-      </S.DivToggle>
+           </S.DivToggle>
 
     </S.Container>
   );

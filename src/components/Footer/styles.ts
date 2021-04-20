@@ -8,10 +8,9 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-@media(max-width: 600px){
-  > div{
-    display: none
+  @media (max-width: 600px) {
+    > div {
+      display: none;
+    }
   }
-}
-  
 `;

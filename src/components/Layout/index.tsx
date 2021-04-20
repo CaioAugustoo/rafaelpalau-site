@@ -6,12 +6,12 @@ import Aside from "../Aside";
 import Content from "../Content";
 import Footer from "../Footer";
 
-const Layout: React.FC = ({children}) => {
+const Layout: React.FC = ({ children }) => {
   return (
     <S.Container>
       <MainHeader />
       <Aside />
-      <Content >{children}</Content>
+      <Content>{children}</Content>
       <Footer />
     </S.Container>
   );
