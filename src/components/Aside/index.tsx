@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./styles";
 import avatar from "../../assets/avatar.jpg";
-import Tag from "../Tags/Tag";
+import Tag from "../Tags";
 import { MdHome } from "react-icons/md";
 import { SiAboutDotMe, SiBloglovin } from "react-icons/si";
 import { GoProject } from "react-icons/go";
@@ -31,7 +31,7 @@ const Aside: React.FC = () => {
         <Tag ml={"30px"} mt={"5px"}>
           &#60;a href="/"&#62;
         </Tag>
-        <S.MenuItemLink href='/'>
+        <S.MenuItemLink href="/">
           {" "}
           <MdHome />
           Home
@@ -48,7 +48,7 @@ const Aside: React.FC = () => {
         <Tag ml={"30px"} mt={"5px"}>
           &#60;a href="/about"&#62;
         </Tag>
-        <S.MenuItemLink href='/'>
+        <S.MenuItemLink href="/about">
           About
           <SiAboutDotMe />
         </S.MenuItemLink>
@@ -64,7 +64,7 @@ const Aside: React.FC = () => {
         <Tag ml={"30px"} mt={"5px"}>
           &#60;a href="/projects"&#62;
         </Tag>
-        <S.MenuItemLink href='/'>
+        <S.MenuItemLink href='/projects'>
           <GoProject />
           Projects
         </S.MenuItemLink>
@@ -80,7 +80,7 @@ const Aside: React.FC = () => {
         <Tag ml={"30px"} mt={"5px"}>
           &#60;a href="/blog"&#62;
         </Tag>
-        <S.MenuItemLink href='/'>
+        <S.MenuItemLink href='/blog'>
           <SiBloglovin />
           log
         </S.MenuItemLink>

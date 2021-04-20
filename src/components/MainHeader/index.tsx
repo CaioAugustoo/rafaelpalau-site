@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-import Tag from "../Tags/Tag";
+import Tag from "../Tags";
 import Toggle from "../Toggle";
 import { DivsTwo } from "../DivTwo/styles";
 import DivThere from "../DivThree";

@@ -5,12 +5,12 @@ import MainHeader from "../MainHeader";
 import Aside from "../Aside";
 import Content from "../Content";
 
-const Layout: React.FC = () => {
+const Layout: React.FC = ({children}) => {
   return (
     <S.Container>
       <MainHeader />
       <Aside />
-      <Content />
+      <Content >{children}</Content>
     </S.Container>
   );
 };
