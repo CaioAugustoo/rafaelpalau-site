@@ -3,12 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: 70px auto;
+  grid-template-rows: 70px auto 50px;
 
   grid-template-areas:
     "AS MH"
-    "AS CT";
-  height: 100vh;
+    "AS CT"
+    "FT FT";
+
+  /* height: 100vh; */
 
   height: 100vh ;
   overflow-y: scroll;
@@ -24,4 +26,5 @@ export const Container = styled.div`
     background-color: ${props => props.theme.colors.tertiary};
     border-radius: 10px;
   }
+  
 `;

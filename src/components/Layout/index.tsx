@@ -4,6 +4,7 @@ import * as S from "./styles";
 import MainHeader from "../MainHeader";
 import Aside from "../Aside";
 import Content from "../Content";
+import Footer from "../Footer";
 
 const Layout: React.FC = ({children}) => {
   return (
@@ -11,6 +12,7 @@ const Layout: React.FC = ({children}) => {
       <MainHeader />
       <Aside />
       <Content >{children}</Content>
+      <Footer />
     </S.Container>
   );
 };

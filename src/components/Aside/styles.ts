@@ -4,13 +4,17 @@ export const Container = styled.div`
   grid-area: AS;
   background-color: ${(props) => props.theme.colors.primary};
   padding-left: 20px;
-  `;
+`;
 
 export const Header = styled.div`
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    height: 150px;
+  }
 `;
 
 export const Image = styled.img`
@@ -21,7 +25,6 @@ export const Image = styled.img`
 
 export const MenuContainer = styled.nav`
   margin-top: 50px;
-  
 `;
 
 export const MenuItemLink = styled.a`
@@ -32,13 +35,25 @@ export const MenuItemLink = styled.a`
   text-decoration: none;
   transition: opacity 0.3s;
   align-items: center;
-  >svg{
+  > svg {
     margin-right: 3px;
-   font-size: 20px;
+    font-size: 20px;
   }
   display: flex;
- 
+
   &:hover {
     opacity: 0.7;
+  }
+`;
+
+export const Title = styled.h3`
+  color: ${(props) => props.theme.colors.success};
+`;
+
+export const ProfileTitle = styled.div`
+  display: none;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
   }
 `;

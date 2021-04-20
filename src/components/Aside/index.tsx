@@ -14,6 +14,12 @@ const Aside: React.FC = () => {
         <Tag ml={"20px"}>
           &#60;img src=" &nbsp; <S.Image src={avatar} /> &nbsp; /"&#62;
         </Tag>
+        <S.ProfileTitle>
+        <Tag>&#60;h3&#62;</Tag>
+        <S.Title>Rafael Palau</S.Title>
+        <Tag>&#60;/h3&#62;</Tag>
+        </S.ProfileTitle>
+      
         <Tag>&#60;/header&#62;</Tag>
       </S.Header>
 

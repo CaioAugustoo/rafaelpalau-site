@@ -15,10 +15,19 @@ export const Profile = styled.div`
   flex-direction: row;
   align-items: center;
   color: ${(props) => props.theme.colors.success};
-`;
 
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
 
 export const ImageAndTitle = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const DivToggle = styled.div`
+  @media (max-width: 600px) {
+    display: flex;
+  }
 `;
