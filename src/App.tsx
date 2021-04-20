@@ -1,13 +1,15 @@
 import React from "react";
-import Home from "./pages/Home";
+import { ThemeProvider } from "styled-components"
+import Layout from "./components/Layout";
 import GlobalStyles from "./styles/GlobalStyles";
+import dark from './styles/themes/dark'
 
 const App: React.FC = () => {
   return (
-    <>
+    <ThemeProvider theme={dark}>
       <GlobalStyles />
-      <Home />
-    </>
+      <Layout />
+    </ThemeProvider>
   );
 };
 export default App;
