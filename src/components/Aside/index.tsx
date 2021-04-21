@@ -3,7 +3,8 @@ import * as S from "./styles";
 import avatar from "../../assets/avatar.jpg";
 import Tag from "../Tags";
 import { MdHome, MdClose, MdMenu } from "react-icons/md";
-import { SiAboutDotMe, SiBloglovin } from "react-icons/si";
+import { SiBloglovin } from "react-icons/si";
+import {FcAbout} from 'react-icons/fc'
 import { GoProject } from "react-icons/go";
 import { useTheme } from "../../hooks/theme";
 import Toggle from "../Toggle";
@@ -68,7 +69,7 @@ const Aside: React.FC = () => {
         <S.MenuItemLink href='/'>
           {" "}
           <MdHome />
-          Home
+          Início
         </S.MenuItemLink>
         <Tag ml={"30px"} mt={"2px"}>
           &#60;/a&#62;
@@ -83,9 +84,9 @@ const Aside: React.FC = () => {
           &#60;a href="/about"&#62;
         </Tag>
         <S.MenuItemLink href='/about'>
-          About
-          <SiAboutDotMe />
-        </S.MenuItemLink>
+        <FcAbout />
+          Sobre {' '}
+                 </S.MenuItemLink>
         <Tag ml={"30px"} mt={"2px"}>
           &#60;/a&#62;
         </Tag>

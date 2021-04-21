@@ -3,7 +3,7 @@ import React from "react";
 const Blog: React.FC = () => {
   return(
     <>
-    <br/> <h1>Blog</h1>
+   <h1>Blog e qualquer coisa...</h1>
    
 
     </>

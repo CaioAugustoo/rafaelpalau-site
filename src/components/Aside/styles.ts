@@ -39,7 +39,7 @@ export const Image = styled.img`
 `;
 
 export const MenuContainer = styled.nav`
-  margin-top: 50px;
+  margin-top: 0px;
   @media (max-width: 600px) {
     margin-top: 0px;
   }
