@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./styles";
 
-interface IAProps {
+export interface IAProps {
   ml?: string;
   mt?: string;
   mr?: string;
