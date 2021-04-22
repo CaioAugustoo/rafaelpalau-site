@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
-interface ITagprops {
-  ml?: string;
-  mt?: string;
-  mb?: string;
-  mr?: string;
-}
+import ITagprops from '.'
 
 export const Tag = styled.div<ITagprops>`
   text-decoration: none;
